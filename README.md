@@ -1,7 +1,7 @@
 # chatroom
 
 A simple chat room implemented in Spring Boot (server) and Javascript
-(client).
+(client). Mentionable technologies used are WebSockets and SockJS.
 
 Running
 ```
