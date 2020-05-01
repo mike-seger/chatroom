@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+    <link href="style/form-style-1.css" rel="stylesheet" type="text/css" />
+    <link href="style/application.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/lib/sockjs.min-1.4.0.js"></script>
+    <script src="js/lib/stomp.min-2.3.3.js"></script>
+    <script src="js/communication.js"></script>
+</head>
+<body>
+<h1>Chat Room</h1>
+<div>
+    <button id="connect" onclick="connect();">Connect</button>
+    <button id="disconnect" style="visibility:hidden" onclick="disconnect();">Disconnect</button><br/><br/>
+
+    <div id="userBlock">
+        <ul class="form-style-1">
+            <li>
+                <label>As User</label>
+                <input type="text" id="user" autocomplete="off" />
+            </li>
+        </ul>
+    </div>
+
+    <div id="chatBlock" style="visibility:hidden">
+        <ul class="form-style-1">
+            <li>
+                <label>Message</label>
+                <textarea id="message" autocomplete="off"></textarea>
+            </li>
+        </ul>
+
+        <button id="sendNum" onclick="sendMssage();">Send</button>
+        <div id="chatResponse"></div>
+    </div>
+</div>
+</body>
+</html>

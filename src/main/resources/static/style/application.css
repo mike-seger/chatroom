@@ -1,0 +1,84 @@
+/*
+    TODO: Think a bout using this:
+    https://github.com/Wolox/react-chat-widget or
+    https://codepen.io/haja-ran/pen/yWwLYM
+    https://codepen.io/FilipRastovic/pen/pXgqKK
+*/
+
+html, body {
+    margin: 5px ;
+    color: white;
+    background-color: rgb(14, 162, 223);
+    font: 18px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+button, input, textarea {
+    color: white;
+    background-color: rgb(60, 60, 60);
+    border: 0;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 3px;
+}
+
+input[type = text], textarea {
+    font-size: 20px;
+    width: 200px;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+}
+
+label {
+    font-size: 24px;
+    color: white;
+    width: 150px;
+    display:inline-block;
+}
+
+/*.formline {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}*/
+
+button:disabled, input:disabled, textarea:disabled {
+    background-color: rgb(190, 190, 190);
+}
+
+p {
+    margin: 8px 0;
+}
+
+#chatResponse {
+    margin-top: 20px;
+    margin-left: 9px;
+    padding: 7px;
+    padding-top: -10px;
+    background-color: rgb(60, 60, 60);
+    border: 1px;
+    border-color: white;
+    height: 200px;
+    width: calc(100% - 32px);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+form-style-1 li {
+    margin-top: 10px;
+}
+
+.message {
+    white-space: pre-wrap;
+}
+
